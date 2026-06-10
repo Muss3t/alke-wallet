@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Menú Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark fintech-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Alke Wallet</a>
+            <div class="d-flex">
+                <button id="logoutBtn" class="btn btn-outline-light btn-sm">Cerrar Sesión</button>
+            </div>
+        </div>
+    </nav>
+
+<div class="row justify-content-center text-center">
+            <div class="col-md-4 mb-3">
+                <a href="sendmoney.html" class="card fintech-card p-4 text-decoration-none text-dark">
+                    <h5 class="mb-0">💸 Enviar Dinero</h5>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="deposit.html" class="card fintech-card p-4 text-decoration-none text-dark">
+                    <h5 class="mb-0">📥 Depositar</h5>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="transactions.html" class="card fintech-card p-4 text-decoration-none text-dark">
+                    <h5 class="mb-0">📋 Movimientos</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

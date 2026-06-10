@@ -1,0 +1,97 @@
+/* tipografía Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #f1f5f9; /* Gris pizarra muy claro para el fondo */
+    font-family: 'Inter', sans-serif;
+    color: #334155; /* Texto principal en gris oscuro */
+}
+
+/* =========================================
+Sobreescribiendo colores de Bootstrap
+========================================= */
+
+/* Botones principales: Azul marino oscuro/Casi negro */
+.btn-primary {
+    background-color: #0f172a !important; 
+    border-color: #0f172a !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #1e293b !important;
+    border-color: #1e293b !important;
+}
+
+/* Botones de éxito (Transferencias) */
+.btn-success {
+    background-color: #10b981 !important; /* Verde esmeralda */
+    border-color: #10b981 !important;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-success:hover {
+    background-color: #059669 !important;
+}
+
+/* Badges y textos de éxito/error */
+.bg-success { background-color: #10b981 !important; }
+.text-success { color: #10b981 !important; }
+.text-primary { color: #0f172a !important; }
+
+/* =========================================
+Componentes Personalizados
+========================================= */
+
+/* Barra de navegación superior */
+.fintech-primary {
+    background-color: #0f172a !important;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* Tarjetas (Cards) minimalistas y estructuradas */
+.fintech-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover sutil para interactividad */
+a.fintech-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1;
+}
+
+/* Tipografía de saldos */
+.balance-text {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    color: #0f172a;
+    margin-top: 10px;
+}
+
+/* Tablas de movimientos */
+.table {
+    color: #334155;
+}
+
+.table-light {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Ocultar elementos temporalmente para animaciones con jQuery */
+.fade-in-section {
+    display: none;
+}
