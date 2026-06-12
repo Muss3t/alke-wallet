@@ -1,0 +1,9 @@
+/* Estilo específico para el número grande del saldo disponible */
+.balance-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(135deg, #1e3c72, #2a5298);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+}

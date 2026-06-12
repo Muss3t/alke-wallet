@@ -1,97 +1,62 @@
-/* tipografía Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+/* Tipografía y fondo general */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 body {
-    background-color: #f1f5f9; /* Gris pizarra muy claro para el fondo */
-    font-family: 'Inter', sans-serif;
-    color: #334155; /* Texto principal en gris oscuro */
+    background-color: #f4f7fb;
+    font-family: 'Outfit', sans-serif;
+    color: #2d3748;
 }
 
-/* =========================================
-Sobreescribiendo colores de Bootstrap
-========================================= */
-
-/* Botones principales: Azul marino oscuro/Casi negro */
-.btn-primary {
-    background-color: #0f172a !important; 
-    border-color: #0f172a !important;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    padding: 10px 20px;
-    border-radius: 8px;
-}
-
-.btn-primary:hover {
-    background-color: #1e293b !important;
-    border-color: #1e293b !important;
-}
-
-/* Botones de éxito (Transferencias) */
-.btn-success {
-    background-color: #10b981 !important; /* Verde esmeralda */
-    border-color: #10b981 !important;
-    font-weight: 600;
-    border-radius: 8px;
-}
-
-.btn-success:hover {
-    background-color: #059669 !important;
-}
-
-/* Badges y textos de éxito/error */
-.bg-success { background-color: #10b981 !important; }
-.text-success { color: #10b981 !important; }
-.text-primary { color: #0f172a !important; }
-
-/* =========================================
-Componentes Personalizados
-========================================= */
-
-/* Barra de navegación superior */
+/* Barra de Navegación */
 .fintech-primary {
-    background-color: #0f172a !important;
-    border-bottom: 1px solid #1e293b;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 15px 0;
 }
+.navbar-brand { font-size: 1.5rem; letter-spacing: 0.5px; }
 
-/* Tarjetas (Cards) minimalistas y estructuradas */
+/* Tarjetas (Cards) base */
 .fintech-card {
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
+    border: none !important;
+    border-radius: 20px;
     background-color: #ffffff;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
 }
-
-/* Efecto hover sutil para interactividad */
 a.fintech-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    border-color: #cbd5e1;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(42, 82, 152, 0.15);
 }
 
-/* Tipografía de saldos */
-.balance-text {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -1.5px;
-    color: #0f172a;
-    margin-top: 10px;
+/* Títulos y Botones Primarios */
+h1, h2, h3, h4, h5 { font-weight: 600; color: #1a202c; }
+
+.btn-primary {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important; 
+    border: none !important;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(42, 82, 152, 0.3);
 }
 
-/* Tablas de movimientos */
-.table {
-    color: #334155;
-}
-
-.table-light {
+/* Formularios genéricos (usados en login, transferencias y depósitos) */
+.form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
     background-color: #f8fafc;
-    color: #64748b;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #2a5298;
+    box-shadow: 0 0 0 4px rgba(42, 82, 152, 0.1);
+}
+.form-label { font-weight: 600; color: #4a5568; font-size: 0.9rem; }
 
-/* Ocultar elementos temporalmente para animaciones con jQuery */
-.fade-in-section {
-    display: none;
-}
+/* Utilidad general */
+.fade-in-section { display: none; }
