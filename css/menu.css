@@ -2,8 +2,18 @@
 .balance-text {
     font-size: 3.5rem;
     font-weight: 700;
+    
+    /* Degradado de fondo (versión webkit y estándar) */
     background: -webkit-linear-gradient(135deg, #1e3c72, #2a5298);
-    -webkit-background-clip: text; 
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    
+    /* Recorte del fondo al texto (versión webkit y estándar) */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Relleno transparente (versión webkit y estándar) */
     -webkit-text-fill-color: transparent;
+    color: transparent;
+    
     margin-top: 10px;
 }
